@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='not_found.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="{{url_for('static', filename='logo.svg')}}" alt="Bloom" height="70px">
+            <a>Home</a>
+            <a>Search</a>
+            <a>Activites</a>
+            <a>Community</a>
+            <a><img src="{{url_for('static', filename='profile_logo.svg')}}" alt="Profile" width="50px"></a>
+        </nav>
+        <h1>How did you get here?!</h1>
+        <p style="max-width: 600px; margin: 0 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam deleniti error culpa sed ea ipsam odit iste consequatur minima dicta, iusto explicabo architecto inventore. Soluta adipisci porro eum pariatur quibusdam?</p>
+        <button onclick="location.href = '/'" class="goHome">Go Home</button>
+    </div>
+</body>
+</html>

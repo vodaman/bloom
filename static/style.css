@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 html, body {
     width: 100%;
@@ -14,6 +15,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 nav {
@@ -38,4 +40,46 @@ nav {
 .title-text {
     font-size: 20px;
     max-width: 1000px;
+}
+
+.buttons {  
+    display: flex;
+    gap: 18px;
+    width: 100%;
+    max-width: 350px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.login {
+    font-family: "Montserrat", serif;
+    font-size: 23px;
+    font-weight: bold;
+    border: none;
+    background-color: black;
+    color: #F0EFE8;
+    margin: 0;
+    padding: 20px;
+    border-radius: 11px;
+    cursor: pointer;
+    width: 50%;
+    transition: font-size .5s;
+}
+
+.signup {
+    border: 1px solid black;
+    border-radius: 11px;
+    background-color: #F0EFE8;
+    font-family: "Montserrat", serif;
+    font-size: 23px;
+    font-weight: bold;
+    color: black;
+    padding: 20px;
+    width: 50%;
+    transition: font-size .5s;
+    
+}
+
+.login:hover, .signup:hover {
+    font-size: 26px;
 }
