@@ -28,6 +28,35 @@ nav {
     margin-top: 10px;
 }
 
+nav a {
+    color: black;
+    text-decoration: none;
+    transition: font-size 0.3s linear;
+}
+
+nav a:hover {
+    font-size: 25px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+#flower {
+    transform: rotate(1deg);
+    width: 95px;
+    transition: transform 1s;
+}
+
+.logo:hover #flower {
+    transform: rotate(360deg);
+}
+
+#flowerText {
+    width: 150px;
+}
+
 .title {
     font-size: 70px;
     text-align: center;
@@ -76,10 +105,11 @@ nav {
     color: black;
     padding: 20px;
     width: 50%;
+    cursor: pointer;
     transition: font-size .5s;
     
 }
 
 .login:hover, .signup:hover {
     font-size: 26px;
-}
+}   

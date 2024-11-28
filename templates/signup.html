@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='signup.css')}}">
+    <title>Sign up - Bloom</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/">
+                <div class="logo">
+                    <img src="{{url_for('static', filename='flower.svg')}}" alt="" id="flower">
+                    <img src="{{url_for('static', filename='text.svg')}}" alt="Bloom" id="flowerText">
+                </div>
+            </a>
+            <a href="/">Home</a>
+            <a href="/search">Search</a>
+            <a href="/activites">Activites</a>
+            <a href="/community">Community</a>
+            <a href="/profile"><img src="{{url_for('static', filename='profile_logo.svg')}}" alt="Profile" width="50px"></a>
+        </nav>
+        <h1>Sign up</h1>
+        <form action="https://www.youtube.com/watch?v=xvFZjo5PgG0" method="post" id="signupForm">
+            <label for="einput">E-Mail: <br></label>
+            <input type="email" class="textField" required><br>
+            <label for="username">Username: <br></label>
+            <input type="text" class="textField" required><br>
+            <label for="name">Name: <br></label>
+            <input type="text" class="textField" required><br>
+            <label for="password">Password: <br></label>
+            <input type="password" required class="textField"><br>
+            <input type="submit" value="Sign up" id="submit">
+        </form>
+        <div class="hyperlinks">
+            <a href="/login">Log in</a>
+            <a href="/forgot">Forgot password?</a>
+        </div>
+    </div>
+</body>
+</html>

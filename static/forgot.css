@@ -1,0 +1,32 @@
+form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+}
+
+.textField {
+    all: unset;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#submit {
+    font-family: "Montserrat", serif;
+    font-size: 23px;
+    font-weight: bold;
+    border: none;
+    background-color: #7ea184;
+    color: #F0EFE8;
+    margin: 0;
+    padding: 11px;
+    border-radius: 11px;
+    cursor: pointer;
+    width: 100%;
+    transition: font-size .5s;
+}
+
+#submit:hover {
+    font-size: 26px;
+}

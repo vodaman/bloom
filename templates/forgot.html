@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='not_found.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='forgot.css')}}">
     <title>Document</title>
 </head>
 <body>
@@ -22,9 +22,12 @@
             <a href="/community">Community</a>
             <a href="/profile"><img src="{{url_for('static', filename='profile_logo.svg')}}" alt="Profile" width="50px"></a>
         </nav>
-        <h1>How did you get here?!</h1>
-        <p style="max-width: 600px; margin: 0 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam deleniti error culpa sed ea ipsam odit iste consequatur minima dicta, iusto explicabo architecto inventore. Soluta adipisci porro eum pariatur quibusdam?</p>
-        <button onclick="location.href = '/'" class="goHome">Go Home</button>
+        <h1>Forgot password</h1>
+        <form action="https://www.youtube.com/watch?v=xvFZjo5PgG0" method="post" id="forgotForm">
+            <label for="einput">E-Mail: <br></label>
+            <input type="email" class="textField" required><br>
+            <input type="submit" value="Sign up" id="submit">
+        </form>
     </div>
 </body>
 </html>
