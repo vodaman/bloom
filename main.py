@@ -19,9 +19,14 @@ def login():
 @app.route("/forgot")
 def forgot():
     return render_template("forgot.html")
-
 @app.route("/profile")
 def profile():
     return render_template("profile.html")
+@app.route("/community")
+def community():
+    return render_template("community.html")
+@app.route("/activities")
+def activities():
+    return render_template("activities.html")
 
 app.run(debug=True)
