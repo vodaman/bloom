@@ -28,5 +28,8 @@ def community():
 @app.route("/activities")
 def activities():
     return render_template("activities.html")
+@app.route("/search")
+def search():
+    return render_template("search.html")
 
 app.run(debug=True)
