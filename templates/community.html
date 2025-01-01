@@ -63,7 +63,20 @@
                 </div>
                 <img src="{{url_for('static', filename='post.png')}}" alt="Post" id="post" onclick="toggleFill(2)">
                 <div class="icons">
-                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-heart" onclick="toggleFill(2)"></i>
+                    <i class="fa-regular fa-comments"></i>
+                    <i class="fa-regular fa-paper-plane"></i>
+                </div>
+                <p id="postText"><strong id="username">johndough</strong>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi iure quisquam dolor eveniet voluptatibus quam in repellat placeat aperiam minus non sequi molestias incidunt, voluptas optio totam itaque repellendus debitis ex a maiores illo culpa nihil ad. Dolorum, error. Sunt earum optio maxime et, dicta id ipsam adipisci mollitia officiis!... <span id="more">more</span></p>            
+            </div>
+            <div class="post">
+                <div class="pfp">
+                    <img src="{{url_for('static', filename='pfp.png')}}" alt="PFP" id="profilePicture">
+                    <p>@johndough</p>
+                </div>
+                <div class="video"><iframe width="1000" height="530" src="https://www.youtube.com/embed/n6Hwyq50YWc?si=WNtFMtEWynuK62xs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <div class="icons">
+                    <i class="fa-regular fa-heart" onclick="toggleFill(3)"></i>
                     <i class="fa-regular fa-comments"></i>
                     <i class="fa-regular fa-paper-plane"></i>
                 </div>

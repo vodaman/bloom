@@ -19,9 +19,6 @@ def login():
 @app.route("/forgot")
 def forgot():
     return render_template("forgot.html")
-@app.route("/profile")
-def profile():
-    return render_template("profile.html")
 @app.route("/community")
 def community():
     return render_template("community.html")
@@ -31,5 +28,20 @@ def activities():
 @app.route("/search")
 def search():
     return render_template("search.html")
+@app.route("/profile")
+def profile():
+    return render_template("john.html")
+@app.route("/john")
+def jon():
+    return render_template("john.html")
+@app.route("/vova")
+def vova():
+    return render_template("vova.html")
+@app.route("/oleg")
+def oleg():
+    return render_template("oleg.html")
+@app.route("/misha")
+def misha():
+    return render_template("miha.html")
 
 app.run(debug=True)
